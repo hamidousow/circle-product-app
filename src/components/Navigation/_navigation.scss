@@ -1,0 +1,39 @@
+#navigation-mobile {
+    padding: 1em 50px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    background-color: $clr-purple;
+    align-items: center;
+}
+
+.navigation_logo img {
+    height: 32px;
+}
+
+#navigation_btn-burger {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    width: 100px; 
+    color: $clr-white;
+    font-weight: 900; 
+    cursor: pointer;
+}
+
+#navigation_btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 15px;    
+}
+
+.navigation_btn-burger_line {
+    height: 3px;
+    width: 35px;
+    display: block;
+    background-color: $clr-white;
+    border-radius: 3px;
+}
