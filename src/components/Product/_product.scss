@@ -1,0 +1,54 @@
+.product_item {
+    box-shadow: 0px 2px 5px #0000001A;
+    border-radius: 3px;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+    font-size: 13px;
+
+    .product_name {        
+        font-weight: 700;
+        color: #817e7e;
+    }
+
+    .product_category {
+        background: orange;
+        font-size: 11px;
+        text-align: center;
+        height: 25px;
+        padding: 2px 8px;
+        line-height: 25px;        
+        width: fit-content;
+        color: $clr-white;
+        border-radius: 25px; 
+    }
+
+    .product_price {
+        color: $clr-dark-grey;
+        font-weight: 400;
+        row-gap: 1em;
+        position: relative;
+
+        &::before {
+            content:"Price";
+            display: block;           
+            color: $clr-purple;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }  
+        
+        &:last-child::after {
+            content:"(including VAT)";
+            display: block;
+            font-size: 11px;
+            // line-height: 1px;
+            font-weight: 400;
+            position: absolute;
+            color: $clr-purple;
+            top: 0;
+            left: 35px;
+        }
+    }    
+}

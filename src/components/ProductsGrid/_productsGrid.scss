@@ -1,0 +1,33 @@
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1em;
+}
+
+.products-grid_header {
+    background-color: $clr-purple;
+    border-radius: 3px;
+    height: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 1em;
+    color: $clr-white;
+    font-weight: 700;
+    font-size: 13px;
+
+    select#category-select {
+        background: transparent;
+        border: transparent;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
+
+#products-items-container {    
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2em;    
+}
